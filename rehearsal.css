@@ -1,0 +1,104 @@
+.overlayer {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+.header {
+    background-color: lightblue;
+    /* flex: 1; */
+    width: 50px;
+    height: 30px;
+}
+
+.sider {
+    background-color: lightpink;
+    /* flex: 1; */
+    width: 50px;
+}
+
+body {
+    background-color: rgb(214, 211, 211);
+    padding-left: 100px;
+}
+
+.open {
+    position: relative;
+    cursor: pointer;
+}
+
+/* .video-grid .video-info,
+.video-grid .profile {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    background-color: white;
+    width: 230px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+    border-color: rgba(46, 46, 46, 0.705);
+    opacity: 1;
+}
+
+.video-grid:hover .video-grid .video-info,
+.video-grid:hover .video-grid .profile {
+    opacity: 1;
+} */
+
+.open-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.open-pic2 {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+.video-info {
+    text-align: start;
+    margin-left: -50px;
+    pointer-events: none;
+}
+
+
+.upload .tips {
+    background-color: gray;
+    color: white;
+    padding: 4px 6px 4px 6px;
+    font-size: 12px;
+    position: absolute;
+    bottom: -30px;
+    opacity: 0;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: opacity 0.30s;
+    white-space: nowrap;}
+
+
+    .upload:hover .tips {
+        opacity: 1;
+    }
+
+    .upload {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 50px;
+        width: 50px;
+    }
+
+    .add-vid {
+        width: 100%;
+    }
+
+    .video-grid {
+        padding-top: 80px;
+    }

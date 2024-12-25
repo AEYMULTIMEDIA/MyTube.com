@@ -1,0 +1,62 @@
+.hovering {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    background-color: white;
+    width: fit-content;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.5);   
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    /* pointer-events: none; */
+    /* display: none; */
+    transition: opacity 0.50s;
+}
+
+.profile {
+    position: relative;
+}
+
+.profile,
+.pics {
+    cursor: pointer;
+}
+
+.profile .pics:hover + .hovering{
+    /* display: block; */                                                                                                           
+    opacity: 1;
+}
+
+.profile  .hovering  {
+    
+    /* pointer-events: none; */
+  
+    /* opacity: 1; */
+    /* z-index: 300; */
+}
+
+.hover-pic-box .hover-pic {
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+}
+
+.hover-author,
+.hover-stats {
+    font-size: 15px;
+    white-space: nowrap;
+    padding-top: 5px;
+    padding-left: 35px;
+    padding-right: 15px;
+}
+
+.hover-author {
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 16px;
+}
+
+.hover-stats {
+    color: rgb(96, 96, 96);
+}
